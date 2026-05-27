@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/rgb" href="Netflix_Symbol_RGB.png" />
+    <title>Início - Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho-principal" id="cabecalhoPrincipal">
+      <div class="cabecalho-esquerda">
+        <img
+          src="Netflix_Logo_RGB.png"
+          alt="logo da netflix"
+          class="logotipo"
+        />
+        <nav>
+          <ul class="links-navegacao">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha lista</a></li>
+            <li><a href="#">Navegar por idiomas</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cabecalho-direita">
+        <div class="container-busca" id="containerBusca">
+          <img src="lupa.png" alt="Buscar" class="icone-lupa" id="botaoBusca" />
+          <input
+            type="text"
+            placeholder="Títulos, gente e gêneros"
+            class="entrada-busca"
+            id="campoBusca"
+          />
+        </div>
+
+        <a href="#" class="link-infantil">Infantil</a>
+
+        <div class="container-notificacao">
+          <img
+            src="sino-de-notificacao.png"
+            alt="Notificações"
+            class="icone-sino"
+          />
+          <div class="menu-notificacao">
+            <div class="item-notificacao">
+              <img src="imagemsino.png" alt="imagem netflix" />
+              <div class="info-notificacao">
+                <p class="texto-aviso">Netflix - O que vai rolar</p>
+                <p class="titulo-aviso">Veja o que está chegando</p>
+                <p class="tempo-aviso">há 1 mês</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-perfil">
+          <div class="caixa-perfil">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+              alt="Perfil"
+              class="foto-perfil"
+            />
+            <span class="seta-perfil">▼</span>
+          </div>
+          <div class="menu-perfil">
+            <ul class="lista-usuarios">
+              <li>
+                <img
+                  src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"
+                  alt="Andre"
+                />
+                Andre
+              </li>
+              <li>
+                <img
+                  src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"
+                  alt="Isaque"
+                />
+                Isaque
+              </li>
+              <li>
+                <img
+                  src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"
+                  alt="Casa"
+                />
+                Casa
+              </li>
+            </ul>
+            <ul class="links-perfil">
+              <li>Gerenciar perfis</li>
+              <li>Transferir perfil</li>
+              <li>Conta</li>
+              <li>Central de Ajuda</li>
+            </ul>
+            <div class="botao-sair">Sair da Netflix</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="conteudo-principal">
+      <section class="banner-principal">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="video-background"
+          id="videoBanner"
+        >
+          <source
+            src="A importância do contexto   O Diabo Veste Prada.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="banner-conteudo">
+          <h1 class="titulo-destaque"><span>O DIABO VESTE PRADA</span></h1>
+          <p class="descricao-destaque">
+            Andy é uma jovem que consegue um emprego na renomada "Runway
+            Magazine", a mais importante revista de moda de Nova York. Ela passa
+            a trabalhar como assistente de Miranda Priestly, editora-chefe da
+            revista. Apesar da chance que muitos sonhariam em conseguir, logo
+            Andy nota que trabalhar com Miranda não é tão simples assim.
+          </p>
+          <div class="botoes-banner">
+            <button class="botao-reproduzir">
+              <img src="play.png" alt="Play" class="icone-botao-banner" />
+              Assistir
+            </button>
+            <button class="botao-informacao">
+              <img
+                src="information.png"
+                alt="Informação"
+                class="icone-botao-banner icone-branco"
+              />
+              Mais informações
+            </button>
+          </div>
+        </div>
+
+        <div class="caixa-info-video">
+          <button class="botao-audio-circular" id="btnSom">
+            <img
+              src="mute.png"
+              alt="Som"
+              id="iconeSom"
+              class="icone-botao-banner icone-branco"
+            />
+          </button>
+
+          <div class="classificacao-idade">
+            <img
+              src="iconelivre.png"
+              alt="Classificação Livre"
+              class="icone-classificacao"
+            />
+          </div>
+        </div>
+
+        <div class="banner-gradiente"></div>
+      </section>
+
+      <section class="secao-titulos">
+        <h2 class="titulo-lista">Minha lista</h2>
+        <div class="container-carrossel">
+          <div class="grade-titulos">
+            <div class="card-titulo">
+              <img
+                src="Strangerthings.jpg"
+                alt="Stranger Things"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">Stranger Things</span>
+                <span class="relevancia-filme">98% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="thewitcher.jpg" alt="The Witcher" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">The Witcher</span>
+                <span class="relevancia-filme">95% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img
+                src="blackmirror.jpg"
+                alt="Black Mirror"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">Black Mirror</span>
+                <span class="relevancia-filme">92% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="Dark.webp" alt="Dark" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Dark</span>
+                <span class="relevancia-filme">97% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img
+                src="PeakyBlinders.jpg"
+                alt="Peaky Blinders"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">Peaky Blinders</span>
+                <span class="relevancia-filme">99% Relevante</span>
+              </div>
+            </div>
+          </div>
+          <div class="controle-proximo">
+            <img src="right-arrow.png" alt="Próximo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-titulos">
+        <h2 class="titulo-lista">Em Alta</h2>
+        <div class="container-carrossel">
+          <div class="grade-titulos">
+            <div class="card-titulo">
+              <img src="round6.png" alt="Round 6" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Round 6</span>
+                <span class="relevancia-filme">Novo</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img
+                src="lacasadepapel.jpg"
+                alt="La Casa de Papel"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">La Casa de Papel</span>
+                <span class="relevancia-filme">94% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="bridgerton.jpg" alt="Bridgerton" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Bridgerton</span>
+                <span class="relevancia-filme">Em alta</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="lupin.jpg" alt="Lupin" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Lupin</span>
+                <span class="relevancia-filme">90% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="theCrown.webp" alt="The Crown" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">The Crown</span>
+                <span class="relevancia-filme">88% Relevante</span>
+              </div>
+            </div>
+          </div>
+          <div class="controle-proximo">
+            <img src="right-arrow.png" alt="Próximo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-titulos">
+        <h2 class="titulo-lista">Séries Estrangeiras de Suspense</h2>
+        <div class="container-carrossel">
+          <div class="grade-titulos">
+            <div class="card-titulo">
+              <img src="Elite.webp" alt="Elite" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Elite</span>
+                <span class="relevancia-filme">91% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="1899.jpg" alt="1899" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">1899</span>
+                <span class="relevancia-filme">85% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="katla.jpg" alt="Katla" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Katla</span>
+                <span class="relevancia-filme">82% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="therain.jpeg" alt="The Rain" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">The Rain</span>
+                <span class="relevancia-filme">87% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="suburra.jpg" alt="Suburra" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Suburra</span>
+                <span class="relevancia-filme">84% Relevante</span>
+              </div>
+            </div>
+          </div>
+          <div class="controle-proximo">
+            <img src="right-arrow.png" alt="Próximo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-titulos">
+        <h2 class="titulo-lista">Produções Nacionais</h2>
+        <div class="container-carrossel">
+          <div class="grade-titulos">
+            <div class="card-titulo">
+              <img
+                src="cidadeinvisível.jpg"
+                alt="Cidade Invisível"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">Cidade Invisível</span>
+                <span class="relevancia-filme">96% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="3porcento.png" alt="3%" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">3%</span>
+                <span class="relevancia-filme">90% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img
+                src="bomdiaverônica.png"
+                alt="Bom Dia, Verônica"
+                class="capa-titulo"
+              />
+              <div class="info-card">
+                <span class="titulo-filme">Bom Dia, Verônica</span>
+                <span class="relevancia-filme">98% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="sintonia.webp" alt="Sintonia" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Sintonia</span>
+                <span class="relevancia-filme">95% Relevante</span>
+              </div>
+            </div>
+            <div class="card-titulo">
+              <img src="irmandade.jpg" alt="Irmandade" class="capa-titulo" />
+              <div class="info-card">
+                <span class="titulo-filme">Irmandade</span>
+                <span class="relevancia-filme">89% Relevante</span>
+              </div>
+            </div>
+          </div>
+          <div class="controle-proximo">
+            <img src="right-arrow.png" alt="Próximo" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape-principal">
+      <div class="container-rodape">
+        <div class="redes-sociais">
+          <img src="facebook.png" alt="Facebook" />
+          <img src="instagram.png" alt="Instagram" />
+          <img src="twitter.png" alt="Twitter" />
+          <img src="youtube.png" alt="YouTube" />
+        </div>
+
+        <ul class="links-rodape">
+          <li><a href="#">Audiocomentários</a></li>
+          <li><a href="#">Central de Ajuda</a></li>
+          <li><a href="#">Cartão pré-pago</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Relações com investidores</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Avisos legais</a></li>
+          <li><a href="#">Preferências de cookies</a></li>
+          <li><a href="#">Informações corporativas</a></li>
+          <li><a href="#">Entre em contato</a></li>
+        </ul>
+        <p class="copyright">© 1997-2026 Netflix, Inc.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
